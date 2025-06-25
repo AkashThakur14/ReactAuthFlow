@@ -1,0 +1,25 @@
+import React from 'react'
+
+export const Login = () => {
+    return (
+        <div className='login-container'>
+            <form className='login-form'>
+                <div className='login-header'>
+                    <h1>Log In</h1>
+                    <p>Welcome back! Please enter your credentials.</p>
+                </div>
+
+                <div className='login-fields'>
+                    <input type="email" name="email" id="email" placeholder='Email' />
+                    <input type="password" name="password" id="password" placeholder='Password' />
+                    <button type='submit'>Log In</button>
+                </div>
+
+                <div className='login-footer'>
+                    <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    )
+}
+
